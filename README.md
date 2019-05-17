@@ -1,10 +1,10 @@
-# write-your-own-enumerable
+# Enumerable exercises
 
-Write your own Enumerable methods and learn!
+Learn how `Enumerable` module works by re-defining each method to pass the tests!
 
 ## What's this?
 
-This project contains some exercises where we redefine methods from `Enumerable` module.
+This project contains some exercises where we re-define methods from `Enumerable` module.
 
 ## How?
 
