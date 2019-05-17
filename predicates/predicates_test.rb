@@ -1,3 +1,7 @@
+class Array
+  undef all?, any?, include?, one?, none?
+end
+
 require 'minitest/autorun'
 require_relative 'predicates'
 

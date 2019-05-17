@@ -1,3 +1,7 @@
+module Enumerable
+  undef partition
+end
+
 require 'minitest/autorun'
 require_relative 'partition'
 

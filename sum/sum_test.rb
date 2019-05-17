@@ -1,3 +1,7 @@
+module Enumerable
+  undef sum
+end
+
 require 'minitest/autorun'
 require_relative 'sum'
 

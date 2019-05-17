@@ -1,3 +1,11 @@
+class Array
+  undef count
+end
+
+module Enumerable
+  undef count
+end
+
 require 'minitest/autorun'
 require_relative 'count'
 
