@@ -1,13 +1,9 @@
 module Enumerable
   def uniq
     ret = []
-    checkers = []
     self.each do |n|
-      checker = block_given? ? yield(n) : n
-      unless checkers.include?(checker)
-        ret << n
-        checkers << checker
-      end
+      included = ret.map{ |m| block_given? ? yield(m) : m }
+      ret << n unless included.include? (block_given? ? yield(n) : n)
     end
     ret
   end
