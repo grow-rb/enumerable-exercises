@@ -1,9 +1,9 @@
-require 'minitest/autorun'
-
 module Enumerable
   undef partition
 end
+
 require_relative 'partition'
+require 'minitest/autorun'
 
 class PartitionTest < MiniTest::Test
   def test_it_works_with_even_odd
