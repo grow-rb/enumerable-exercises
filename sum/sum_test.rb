@@ -1,8 +1,8 @@
+require 'minitest/autorun'
 module Enumerable
   undef sum
 end
 
-require 'minitest/autorun'
 require_relative 'sum'
 
 class SumTest < MiniTest::Test
