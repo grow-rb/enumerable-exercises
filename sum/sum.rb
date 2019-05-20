@@ -1,5 +1,8 @@
 module Enumerable
-    def sum(a = nil)
-        return 1
+    def sum(a = 0)
+        self.each do |v|
+            a += block_given? ? yield(v) : v
+        end
+        return a
     end
 end
