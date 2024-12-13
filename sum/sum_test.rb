@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative 'my_sum'
 
-class SumTest < MiniTest::Test
+class SumTest < Minitest::Test
   def test_hash_sum_with_block
     assert_equal 50, { 1 => 10, 2 => 20 }.my_sum {|k, v| k * v }
   end

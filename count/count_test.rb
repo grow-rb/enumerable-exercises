@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative 'my_count'
 
-class CountTest < MiniTest::Test
+class CountTest < Minitest::Test
   def setup
     @ary = [1, 2, 4, 2]
     @hash = {foo: 42, bar: 3, buzz: 10}

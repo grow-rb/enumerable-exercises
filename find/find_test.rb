@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative 'my_find'
 
-class FindTest < MiniTest::Test
+class FindTest < Minitest::Test
   def test_without_ifnone_finding_nothing
     refute (1..10).my_find {|i| i % 5 == 0 && i % 7 == 0 }
   end

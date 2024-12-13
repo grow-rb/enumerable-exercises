@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative 'my_uniq'
 
-class UniqTest < MiniTest::Test
+class UniqTest < Minitest::Test
   def test_without_block
     assert_equal ["a", "b", "c"], ["a", "a", "b", "b", "c"].my_uniq
   end

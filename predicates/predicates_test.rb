@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative 'my_predicates'
 
-class PredicatesTest < MiniTest::Test
+class PredicatesTest < Minitest::Test
   def test_all_with_block
     assert %w[ant bear cat].my_all? { |word| word.length >= 3 }
     refute %w[ant bear cat].my_all? { |word| word.length >= 4 }

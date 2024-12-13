@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative 'my_map'
 
-class MyMapTest < MiniTest::Test
+class MyMapTest < Minitest::Test
   def test_with_block
     assert_equal [1, 4, 9], [1, 2, 3].my_map {|i| i ** 2 }
   end

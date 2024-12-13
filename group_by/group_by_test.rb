@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative 'my_group_by'
 
-class GroupByTest < MiniTest::Test
+class GroupByTest < Minitest::Test
   def test_all_group_with_itself
     assert_equal({0 => [0], 1 => [1], 2 => [2]}, [0, 1, 2].my_group_by(&:itself))
   end

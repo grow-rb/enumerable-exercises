@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative 'students'
 
-class StudentsTest < MiniTest::Test
+class StudentsTest < Minitest::Test
   def setup
     @students = [
       {

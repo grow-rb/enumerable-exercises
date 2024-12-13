@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative 'my_reject'
 
-class RejectTest < MiniTest::Test
+class RejectTest < Minitest::Test
   def test_for_range
     assert_equal [1, 2, 4, 5, 7, 8, 10], (1..10).my_reject { |i|  i % 3 == 0 }
   end

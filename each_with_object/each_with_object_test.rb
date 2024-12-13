@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative 'my_each_with_object'
 
-class EachWithObjectTest < MiniTest::Test
+class EachWithObjectTest < Minitest::Test
   def test_when_memo_is_array
     assert_equal [2, 4, 6, 8, 10], (1..5).my_each_with_object([]) {|i, a| a << i * 2 }
   end
